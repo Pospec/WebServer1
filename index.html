@@ -9,6 +9,10 @@
         function Send() {
             let v = document.getElementById("zprava").value;
             let n = document.getElementById("prezdivka").value;
+            if( v == "" || v == null){
+                alert("Žádná zpráva nezadána")
+                return;
+            }
             if(n == "" || n == null){
                 alert("Žádná přezdívka nezadána");
                 return;
